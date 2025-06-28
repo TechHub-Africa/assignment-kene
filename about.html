@@ -6,102 +6,93 @@
     <title>About me</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        p {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 15px 30px;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    color: #3498db;
+    font-size: 24px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px; /* Controls space between links */
+}
+
+.list li a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.list li a:hover {
+    text-decoration: underline;
+}
+
+/* From your original */
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+img {
+    border-radius: 10%;
+    width: 600px;
+    height: auto;
+}
+
+.about {
+    flex: 1;
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.side {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+p {
             line-height: 1.6;
             margin: 10px 0;
             font-size: 20px;
             margin-bottom: 550px;
         }
-        img {
-            border-radius: 10%;
-            height: auto;
-            width: 600px;
-            
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-        }
-        a {
-            text-decoration: none;
-            color: #3498db;
-            margin-right: 400px;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .side
-        {
-            display: flex;
-            align-items:center;
-            gap: 16px;
-        }
-        .about{
-            flex: 1;
-            color: black;
-        }
-        .intro{
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
-        #h1 {
-            color: white;
-            font-size: 24px;
-           
-        }
-        .navbar {
-            padding: 15px 30px;
-            background-color: #1e1e1e;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .list{
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            gap: 5px;
-            margin: 0;
-        }
-        .list li a {
-            text-decoration: none;
-            color: #3498db;
-            font-weight: bold;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
-        .header {
-            color: #3498db;
-            font-size: 24px;
-            margin: 0;
-        }
+
     </style>
 </head>
-<header class="header">
-<div id="h1">
-    <h1>About page</h1>
-    </div>
-    <nav class="navbar">
+<header>
+  <div class="navbar">
+    <h1 class="header-title">About page</h1>
     <ul class="list">
-    <li><a href = "index.html">Check Home page </a></li>
-    <li><a href = "services.html">Check out my services</a></li>
-    <li><a href = "product.html">Check out my products</a></li>
+      <li><a href="index.html">Check Home page</a></li>
+      <li><a href="services.html">Check out my services</a></li>
+      <li><a href="product.html">Check out my products</a></li>
     </ul>
-    </nav>
-</header>   
+  </div>
+</header> 
 <body>
     <div class="intro">
     <div>
